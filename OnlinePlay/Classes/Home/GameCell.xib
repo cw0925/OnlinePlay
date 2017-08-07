@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GameCell">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="173"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="255" height="173"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="olo-GL-ATU">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="127"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="127" id="BYT-Me-rCM"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mak-pC-jwf">
+                        <rect key="frame" x="20" y="93" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="big-qH-Fty"/>
+                            <constraint firstAttribute="height" constant="60" id="xnR-Dq-Z9M"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dW-UX-wu4">
+                        <rect key="frame" x="88" y="93" width="167" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="u58-rK-Uz1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crG-tM-7um">
+                        <rect key="frame" x="88" y="132" width="167" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fpi-5D-Up6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="olo-GL-ATU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Ib-wv-VGM"/>
+                <constraint firstItem="crG-tM-7um" firstAttribute="leading" secondItem="mak-pC-jwf" secondAttribute="trailing" constant="8" id="2wH-aa-CMR"/>
+                <constraint firstItem="mak-pC-jwf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="93" id="9XB-3U-Epp"/>
+                <constraint firstItem="6dW-UX-wu4" firstAttribute="leading" secondItem="mak-pC-jwf" secondAttribute="trailing" constant="8" id="Fec-Ll-BnC"/>
+                <constraint firstAttribute="trailing" secondItem="crG-tM-7um" secondAttribute="trailing" id="H9y-qf-BMn"/>
+                <constraint firstAttribute="trailing" secondItem="6dW-UX-wu4" secondAttribute="trailing" id="VeE-Rn-neb"/>
+                <constraint firstItem="6dW-UX-wu4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="93" id="XSO-Ax-WRz"/>
+                <constraint firstItem="olo-GL-ATU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XyV-4y-3zP"/>
+                <constraint firstItem="mak-pC-jwf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="f0l-Nu-Ncq"/>
+                <constraint firstAttribute="trailing" secondItem="olo-GL-ATU" secondAttribute="trailing" id="mq3-W8-3J3"/>
+                <constraint firstItem="crG-tM-7um" firstAttribute="top" secondItem="olo-GL-ATU" secondAttribute="bottom" constant="5" id="nJk-9x-5EM"/>
+            </constraints>
+            <size key="customSize" width="255" height="173"/>
+            <connections>
+                <outlet property="desc" destination="6dW-UX-wu4" id="9Hu-0c-0Ui"/>
+                <outlet property="icon" destination="mak-pC-jwf" id="3c5-h5-RxJ"/>
+                <outlet property="img" destination="olo-GL-ATU" id="kRz-CA-FKF"/>
+                <outlet property="name" destination="crG-tM-7um" id="wZu-yg-hzr"/>
+            </connections>
+            <point key="canvasLocation" x="-367.5" y="52.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

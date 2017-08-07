@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="187" id="KGk-i7-Jjw" customClass="SearchTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDj-vB-SdR">
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="175"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游戏达人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIN-2u-oFQ">
+                                <rect key="frame" x="8" y="8" width="131" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="Luc-u1-DNT"/>
+                                    <constraint firstAttribute="height" constant="23" id="eaP-a5-vXw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb3-rY-hnc">
+                                <rect key="frame" x="328" y="8" width="46" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="iI5-9G-UQ2"/>
+                                    <constraint firstAttribute="width" constant="46" id="iQh-4c-bp9"/>
+                                </constraints>
+                                <state key="normal" title="更多&gt;"/>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THd-jN-0vt">
+                                <rect key="frame" x="0.0" y="39" width="382" height="128"/>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="LIN-2u-oFQ" firstAttribute="leading" secondItem="UDj-vB-SdR" secondAttribute="leading" constant="8" id="R5l-Cg-crd"/>
+                            <constraint firstAttribute="bottom" secondItem="THd-jN-0vt" secondAttribute="bottom" constant="8" id="UI3-QI-cVR"/>
+                            <constraint firstItem="lb3-rY-hnc" firstAttribute="top" secondItem="UDj-vB-SdR" secondAttribute="top" constant="8" id="a4A-Hg-59Z"/>
+                            <constraint firstItem="THd-jN-0vt" firstAttribute="top" secondItem="lb3-rY-hnc" secondAttribute="bottom" constant="8" id="es1-fg-s5b"/>
+                            <constraint firstAttribute="trailing" secondItem="THd-jN-0vt" secondAttribute="trailing" id="lhX-FU-fca"/>
+                            <constraint firstItem="THd-jN-0vt" firstAttribute="leading" secondItem="UDj-vB-SdR" secondAttribute="leading" id="oAS-X8-6Uj"/>
+                            <constraint firstAttribute="trailing" secondItem="lb3-rY-hnc" secondAttribute="trailing" constant="8" id="wDi-OM-K3C"/>
+                            <constraint firstItem="LIN-2u-oFQ" firstAttribute="top" secondItem="UDj-vB-SdR" secondAttribute="top" constant="8" id="wEp-uX-ENp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UDj-vB-SdR" secondAttribute="bottom" constant="13" id="VPK-uy-BWu"/>
+                    <constraint firstAttribute="trailing" secondItem="UDj-vB-SdR" secondAttribute="trailing" id="YYm-g4-qLO"/>
+                    <constraint firstItem="UDj-vB-SdR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qUq-wn-mNa"/>
+                    <constraint firstItem="UDj-vB-SdR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qlW-MW-7Uq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgview" destination="UDj-vB-SdR" id="OMB-6m-YQR"/>
+                <outlet property="moreBtn" destination="lb3-rY-hnc" id="Yvj-8k-Q6y"/>
+                <outlet property="scroll" destination="THd-jN-0vt" id="IDz-IF-ZrH"/>
+                <outlet property="title" destination="LIN-2u-oFQ" id="tfx-Hv-7Bn"/>
+            </connections>
+            <point key="canvasLocation" x="243" y="-79"/>
+        </tableViewCell>
+    </objects>
+</document>
