@@ -1,0 +1,3 @@
+# OnlinePlay
+仿映客app
+由于上传文件100M的限制，项目缺少IJKMediaFramework.framework和Hyphenate.framework这两个文件，下载地址，下载完成解压后放到相应目录下
